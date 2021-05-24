@@ -1,4 +1,4 @@
-# [Python Weppipalve kurssi](https://terokarvinen.com/2021/python-web-service-from-idea-to-production/)
+# [Python weppipalvelu kurssi](https://terokarvinen.com/2021/python-web-service-from-idea-to-production/)
 
 ## Description
 
