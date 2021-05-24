@@ -4,6 +4,6 @@ app = Flask('__name__')
 
 @app.route("/")
 def index():
-    return "Hei Thinh!"
-app.run(port=2000)
-#print(app)
+    return "Hei Python webppipalvelu kurssi!!!"
+if __name__ == '__main__':
+	app.run(debug=True)
