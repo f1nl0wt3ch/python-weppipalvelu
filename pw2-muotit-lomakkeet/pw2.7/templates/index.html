@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD</title>
+</head>
+<body>
+    <!-- LIST ALL BLOGS -->
+    <div>
+        <ul>
+            <% if blogs and blogs.length > 0 %>
+               <% for blog in blogs %>
+                 <li>{{blog.id}} | {{blog.title}} | {{blog.author}} | {{blog.createdDate}}</li>
+               <% endfor %>
+            <% endif %>
+        </ul>
+    </div>
+
+    <!-- CREATE NEW BLOG -->
+    <div>
+        <div>
+            <form method="delete">
+                <input type="text" name="title" placeholder="Nimi" required>
+                <input type="text" name="title" placeholder="Kirjoittaja" required>
+                <input type="submit" name="submit" value="Luo">
+            </form>
+        </div>
+    </div>
+
+    <!-- UPDATE AN EXISTED BLOG -->
+    <div>
+        <div>
+            <form method="delete">
+                <input type="text" name="id" placeholder="Syötä blog id" required>
+                <input type="submit" name="submit" value="Poista">
+            </form>
+        </div>
+    </div>
+
+    <!-- DELETE A BLOG -->
+    <div>
+        <form method="delete">
+            <input type="text" name="id" placeholder="Syötä blog id" required>
+            <input type="submit" name="submit" value="Poista">
+        </form>
+    </div>
+</body>
+</html>

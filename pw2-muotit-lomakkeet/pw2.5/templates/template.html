@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Python weppipalvelu kurssi</title>
+</head>
+<body>
+<form method="post">
+    <input type="text" name="number_one" placeholder="Eka numero">
+    <select name="selected_cal">
+        {% for cal in cals %}
+        <option value="{{ cal.index }}">{{ cal.name }}</option>
+        {% endfor %}
+    </select>
+    <input type="text" name="number_two" placeholder="Toka numero">
+    <input type="submit" name="submit" value="Laske">
+</form>
+{% if result %}
+<h4>Tulos: {{ result }}</h4>
+{% endif %}
+</body>
+</html>
