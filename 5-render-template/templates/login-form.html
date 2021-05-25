@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Python Weppipalvelu</title>
+</head>
+<body>
+    {% if welcome_text %}
+       <p style="color: red">{{ welcome_text }}</p>
+    {% else %}
+    <form method="post">
+        <input type="text" name="username" placeholder="admin">
+        <input type="password" name="password" placeholder="123456">
+        <input type="submit" name="Login">
+    </form>
+    {% endif %}
+</body>
+</html>
