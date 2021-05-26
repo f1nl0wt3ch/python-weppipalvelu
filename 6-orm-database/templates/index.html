@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Python webppipalvelu kurssi</title>
+</head>
+<body>
+<div>
+    <h1>List of animals in database</h1>
+    <li>
+        {% for animal in animals %}
+        <ol>{{ animal.id }}. {{ animal.name }}</ol>
+        {% endfor %}
+    </li>
+</div>
+<hr>
+{% extends "first.html" %}
+</body>
+</html>
